@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checking Access...</title>
+    <script>
+      // Check the referrer
+      const referrer = document.referrer;
+
+      // If user did not come from Lootdest
+      if (!referrer.includes("lootdest.com")) {
+        // Redirect them back to your Lootdest task
+        window.location.href = "https://lootdest.com/tasks/your-task-id"; // ← your Lootdest task URL
+      } else {
+        // Redirect to your LootLabs key page
+        window.location.href = "https://lootlabs.link/your-key-page"; // ← your LootLabs key link
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting, please wait...</p>
+  </body>
+</html>
